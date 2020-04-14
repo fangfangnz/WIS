@@ -5,6 +5,7 @@ using System.Web;
 
 namespace WIS.Models
 {
+    //student class
     public class Student
     {
 
@@ -12,5 +13,19 @@ namespace WIS.Models
 
 
         public string stuName { get; set; }
+
+        public GENDER gender { get; set; }
+
     }
+
+
+    //gender enum
+    public enum GENDER
+    {
+        M=0,
+        F=1
+    }
+
+
+  
 }
