@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-//Author:Qifeng Fang 
-//Date: 18/04/2020
+/**Author:Qifeng Fang
+ * Create Date: 01/04/2020
+ * Update Date: 18/04/2020
+ * Brackets follow the guidelines.
+ * Varaible name has renamed.
+ * 
+**/
 namespace WIS.Models
 {
-    //student class
-    public class Student 
-    {
-
+    //student entity class
+    public class Student { //Brackets follow the guidelines.
+   
         public int id { get; set; } 
 
 
-        public string stuName { get; set; } 
+        public string studentName { get; set; } //varaible name has renamed.
 
         public GENDER gender { get; set; }
 
@@ -22,10 +26,10 @@ namespace WIS.Models
 
 
     //gender enum
-    public enum GENDER
-    {
-        M=0,
-        F=1
+    public enum GENDER{
+    
+        Male=0,
+        Female=1
     }
 
 
