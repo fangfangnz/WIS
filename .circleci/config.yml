@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     machine:
-      image: circleci/windows@1.0.0
+      image: alpine:3.7
     steps:
     - checkout
     - run:
