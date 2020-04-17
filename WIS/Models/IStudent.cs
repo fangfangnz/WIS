@@ -6,7 +6,7 @@ using System.Web;
 namespace WIS.Models
 {
     //student interface
-    interface IStudent 
+    interface IStudent  
     {
         string sayHello(string name,GENDER gender); 
     }
