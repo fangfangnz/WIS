@@ -4,28 +4,34 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+/** 
+ * Author: Qifeng Fang
+ * Date:  18/04/2020
+ * Method name has changed. Follow the guideline,start the lowercase letter.
+ * 
+ * */
 namespace WIS.Controllers
 {
     public class HomeController : Controller
     {
         // GET: Home
         //Main form page
-        public ActionResult Index()
-        {
+        public ActionResult index(){ //Brackets follow the guidelines.
+        
             ViewBag.welcomeInfo = "Welcome Institute of Studies";
             return View();
         }
 
         //This a register page
-        public ActionResult Register()
-        {
+        public ActionResult register(){
+        
             return View();
         }
 
 
         //Login Page.
-        public ActionResult Login()
-        {
+        public ActionResult login(){
+        
             return View();
         }
     }
