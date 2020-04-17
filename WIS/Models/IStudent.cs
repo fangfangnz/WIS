@@ -8,6 +8,6 @@ namespace WIS.Models
     //student interface
     interface IStudent 
     {
-        string sayHello(string name,GENDER gender);
+        string sayHello(string name,GENDER gender); 
     }
 }
