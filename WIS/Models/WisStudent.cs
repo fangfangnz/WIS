@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WIS.Models
 {
-    //WIS student entity
+    //WIS student entity 
     public class WisStudent : IStudent
     {
         public string sayHello(string name, GENDER gender) 
