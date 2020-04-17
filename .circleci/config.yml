@@ -1,12 +1,31 @@
-version: 2.1
-
-orbs:
-  win: circleci/windows@2.2.0
-
+# Orb 'circleci/windows@2.2.0' resolved to 'circleci/windows@2.2.0'
+version: 2
 jobs:
-   build:
-     executor: win/default     
-    
-     steps:
-       - checkout
-       - run: dotnet build
+  build:
+    machine:
+      image: circleci/windows@1.0.0
+    steps:
+    - checkout
+    - run:
+        command: dotnet build
+    resource_class: windows.medium
+    shell: powershell.exe -ExecutionPolicy Bypass
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
+
+# Original config.yml file:
+# version: 2.1
+# 
+# orbs:
+#   win: circleci/windows@2.2.0
+# 
+# jobs:
+#    build:
+#      executor: win/default     
+#     
+#      steps:
+#        - checkout
+#        - run: dotnet build
