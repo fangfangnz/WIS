@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<h1 class="text-warning text-center">WIS  Register Page</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+
+            <label for="inlineRadio1">Gender</label>
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Female</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Male</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="password" class="form-control" id="address">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+            <a href="/home/Login" class="btn btn-success mx-5">Login</a>
+
+        </form>
+    </div>
+    <div class="col-md-6">
+        <img src="~/Imges/WIS_Logo1.png" class="img-thumbnail" />
+    </div>
+
+</div>

@@ -1,0 +1,18 @@
+# Orb 'circleci/windows@2.2.0' resolved to 'circleci/windows@2.2.0'
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10.13-jessie-browsers
+      - image: circleci/mongo:4.0.4-xenial-ram
+    steps:
+    - checkout
+    - run:
+        command: dotnet build
+    resource_class: windows.medium
+    shell: powershell.exe -ExecutionPolicy Bypass
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
